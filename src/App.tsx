@@ -1,9 +1,10 @@
 import React from 'react';
+import Pages from './Pages';
 
 const App = () => {
   return (
     <div>
-      <h1>Clash Royale</h1>
+      <Pages.Cards />
     </div>
   );
 }
