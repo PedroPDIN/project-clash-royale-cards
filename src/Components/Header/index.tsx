@@ -1,7 +1,8 @@
 import React from 'react';
 import { FcSearch } from 'react-icons/fc';
-import SHeader from './styled';
 import logo from '../../Utils/Images/images_urls';
+
+import SHeader from './styled';
 
 const Header = () => (
   <SHeader>
