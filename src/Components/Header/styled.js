@@ -1,10 +1,12 @@
 import styled from 'styled-components';
+import { header } from '../../styles';
 
 const SHeader = styled.header`
+  background-color: ${header.background};
+  border-bottom: solid 5px black;
   display: flex;
   justify-content: space-between;
-  margin: 8px 0px;
-  padding: 0px 20px 0px;
+  padding: 10px 35px;
 
   div:nth-child(1) {
     display: flex;
@@ -12,25 +14,25 @@ const SHeader = styled.header`
   };
 
   div:nth-child(1) img {
-      width: 110px;
+      width: 120px;
     };
 
   div:nth-child(1) span {
-    color: black;
+    color: ${header.fontColor};
     font-size: 15px;
-    margin-left: 10px
+    margin-left: 20px
   };
 
   div:nth-child(2) {
     align-items: center;
     display: flex;
-    font-size: 37px;
-    margin-right: 8px;
+    font-size: 40px;
+    margin-right: 20px;
   };
 
   @media screen and (max-width: 768px) {
-    padding: 0px 8px 0px;
-    margin: 8px 0px;
+    border-bottom: solid 4px black;
+    padding: 5px 12px;
 
     div:nth-child(1) {
       display: flex;
@@ -38,13 +40,13 @@ const SHeader = styled.header`
     };
 
     div:nth-child(1) img {
-      width: 92px;
+      width: 96px;
     };
 
     div:nth-child(1) span {
-      color: black;
-      font-size: 13px;
-      margin-left: 5px
+      color: ${header.fontColor};
+      font-size: 12px;
+      margin-left: 14px
     };
 
     div:nth-child(2) {

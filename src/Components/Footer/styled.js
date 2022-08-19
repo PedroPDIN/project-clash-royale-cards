@@ -1,18 +1,18 @@
 import styled from 'styled-components';
-import colorsFooter from '../../styles';
+import { footer } from '../../styles';
 
 const SFooter = styled.footer`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: ${colorsFooter.background};
+  background-color: ${footer.background};
   bottom: 0;
   position: absolute;
   padding: 15px 0px 30px 0px;
   width: 100%;
 
   div:nth-child(1) span {
-    color: ${colorsFooter.colorWhite};
+    color: ${footer.fontColor};
     font-size: 15px;
     margin-left: 80px;
   };
@@ -24,14 +24,14 @@ const SFooter = styled.footer`
 
   @media screen and (max-width: 768px) {
     align-items: center;
-    background-color: ${colorsFooter.background};
+    background-color: ${footer.background};
     bottom: 0;
     position: absolute;
     padding: 10px 0px 22px 0px;
     width: 100%;
 
     div:nth-child(1) span {
-      color: ${colorsFooter.colorWhite};
+      color: ${footer.fontColor};
       font-size: 10px;
       margin-left: 20px;
     };

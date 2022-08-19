@@ -1,6 +1,14 @@
-const colorsFooter = {
-  background: '#131a35',
-  colorWhite: '#ffffff',
+const header = {
+  background: '#29a5ee',
+  fontColor: '#ffffff',
 };
 
-export default colorsFooter;
+const footer = {
+  background: '#131a35',
+  fontColor: '#ffffff',
+};
+
+export {
+  header,
+  footer,
+};
