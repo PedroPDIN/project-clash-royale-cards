@@ -1,11 +1,19 @@
 import React from 'react';
+import logo from '../../Utils/Images/images_urls';
 
-function Footer() {
+const Footer = () => {
+  const year: number = new Date().getFullYear();
+
   return (
-    <div>
-      <h1>Aqui esta o Rodapé</h1>
-    </div>
+    <footer>
+      <div>
+        <span>{`@ ${year}`}</span>
+      </div>
+      <div>
+        <img src={ logo } alt="logo clash royale" />
+      </div>
+    </footer>
   );
-}
+};
 
 export default Footer;
