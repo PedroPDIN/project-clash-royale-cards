@@ -1,9 +1,9 @@
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from './Header';
+import Footer from './Footer';
 
-const Components =  {
+const Components = {
   Header,
-  Footer
-}
+  Footer,
+};
 
 export default Components;

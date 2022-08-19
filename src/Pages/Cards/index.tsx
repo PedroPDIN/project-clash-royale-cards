@@ -1,7 +1,7 @@
 import React from 'react';
 import Components from '../../Components';
 
-const Cards = () => {
+function Cards() {
   return (
     <div>
       <Components.Header />
@@ -9,8 +9,6 @@ const Cards = () => {
       <Components.Footer />
     </div>
   );
-};
+}
 
 export default Cards;
-
- 
