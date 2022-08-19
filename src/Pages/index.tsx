@@ -1,7 +1,7 @@
-import Cards from "./Cards";
+import Cards from './Cards';
 
 const Pages = {
-  Cards
-}
+  Cards,
+};
 
 export default Pages;

@@ -1,7 +1,7 @@
 import React from 'react';
 import Pages from './Pages';
 
-const App = () => {
+function App() {
   return (
     <div>
       <Pages.Cards />

@@ -1,10 +1,18 @@
 import React from 'react';
+import { FcSearch } from 'react-icons/fc';
+import logo from '../../Utils/images';
 
 function Header() {
   return (
-    <div>
-      <h1>Aqui esta o cabeçalho</h1>
-    </div>
+    <header>
+      <div>
+        <img src={logo} alt="logo clash royale" />
+        <span>CLASH ROYALE - CARDS</span>
+      </div>
+      <div>
+        <FcSearch />
+      </div>
+    </header>
   );
 }
 
