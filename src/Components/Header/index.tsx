@@ -1,10 +1,11 @@
 import React from 'react';
 import { FcSearch } from 'react-icons/fc';
+import SHeader from './styled';
 import logo from '../../Utils/images';
 
 function Header() {
   return (
-    <header>
+    <SHeader>
       <div>
         <img src={logo} alt="logo clash royale" />
         <span>CLASH ROYALE - CARDS</span>
@@ -12,7 +13,7 @@ function Header() {
       <div>
         <FcSearch />
       </div>
-    </header>
+    </SHeader>
   );
 }
 
