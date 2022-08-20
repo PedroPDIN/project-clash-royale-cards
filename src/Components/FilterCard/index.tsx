@@ -1,7 +1,9 @@
 import React from 'react';
 
+import SFilter from './styled';
+
 const FilterCard = () => (
-  <div>
+  <SFilter>
     <input
       type="text"
       placeholder="nome"
@@ -13,7 +15,7 @@ const FilterCard = () => (
       <option value="epic">Épico</option>
       <option value="legendary">Lendário</option>
     </select>
-  </div>
+  </SFilter>
 );
 
 export default FilterCard;
