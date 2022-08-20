@@ -7,6 +7,8 @@ const SHeader = styled.header`
   display: flex;
   justify-content: space-between;
   padding: 10px 35px;
+  position: relative;
+  z-index: 2;
 
   div:nth-child(1) {
     display: flex;
@@ -39,7 +41,7 @@ const SHeader = styled.header`
   };
 
   button:hover {
-      transform: translateY(-4px);
+      transform: translateY(4px);
   };
 
   @media screen and (max-width: 768px) {
@@ -77,7 +79,7 @@ const SHeader = styled.header`
     };
 
     button:hover {
-      transform: translateY(-4px);
+      transform: translateY(4px);
     }
   };
 `;

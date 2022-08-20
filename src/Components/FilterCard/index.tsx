@@ -10,7 +10,7 @@ const FilterCard = () => (
     />
     <select name="" id="">
       <option value="all">Todos</option>
-      <option value="common">Comum</option>
+      <option value="common">Common</option>
       <option value="rare">Rara</option>
       <option value="epic">Épico</option>
       <option value="legendary">Lendário</option>
