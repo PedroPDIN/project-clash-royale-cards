@@ -5,7 +5,6 @@ import SFooter from './styled';
 
 const Footer = () => {
   const year: number = new Date().getFullYear();
-
   return (
     <SFooter>
       <div>

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { footer } from '../../styles';
+import { footer } from '../../Styles';
 
 const SFooter = styled.footer`
   display: flex;

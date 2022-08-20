@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { header } from '../../styles';
+import { header } from '../../Styles';
 
 const SHeader = styled.header`
   background-color: ${header.background};
@@ -23,8 +23,10 @@ const SHeader = styled.header`
     margin-left: 20px
   };
 
-  div:nth-child(2) {
+  button {
     align-items: center;
+    background-color: ${header.background};
+    cursor: pointer;
     display: flex;
     font-size: 40px;
     margin-right: 20px;
@@ -49,8 +51,10 @@ const SHeader = styled.header`
       margin-left: 14px
     };
 
-    div:nth-child(2) {
+    button {
       align-items: center;
+      background-color: ${header.background};
+      cursor: pointer;
       display: flex;
       font-size: 35px;
       margin-right: 5px;
