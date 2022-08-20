@@ -30,6 +30,11 @@ const SHeader = styled.header`
     display: flex;
     font-size: 40px;
     margin-right: 20px;
+    transition: all 0.4 ease-in-out;
+  };
+
+  button:hover {
+      transform: translateY(-4px);
   };
 
   @media screen and (max-width: 768px) {
@@ -58,7 +63,12 @@ const SHeader = styled.header`
       display: flex;
       font-size: 35px;
       margin-right: 5px;
+      transition: all 0.4 ease-in-out;
     };
+
+    button:hover {
+      transform: translateY(-4px);
+    }
   };
 `;
 
