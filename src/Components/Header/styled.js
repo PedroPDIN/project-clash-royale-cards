@@ -15,7 +15,12 @@ const SHeader = styled.header`
 
   div:nth-child(1) img {
       width: 120px;
+      transition: all 0.1 ease-in-out;
     };
+
+  div:nth-child(1) img:hover {
+    transform: translateY(2px);
+  };
 
   div:nth-child(1) span {
     color: ${header.fontColor};
@@ -48,7 +53,12 @@ const SHeader = styled.header`
 
     div:nth-child(1) img {
       width: 96px;
+      transition: all 0.1 ease-in-out;
     };
+
+    div:nth-child(1) img:hover {
+      transform: translateY(2px);
+    }
 
     div:nth-child(1) span {
       color: ${header.fontColor};
