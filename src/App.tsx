@@ -1,11 +1,10 @@
 import React from 'react';
+import Pages from './Pages';
 
-const App = () => {
-  return (
-    <div>
-      <h1>Clash Royale</h1>
-    </div>
-  );
-}
+const App = () => (
+  <div>
+    <Pages.Cards />
+  </div>
+);
 
 export default App;
