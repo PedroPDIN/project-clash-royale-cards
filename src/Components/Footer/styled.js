@@ -6,10 +6,11 @@ const SFooter = styled.footer`
   justify-content: space-between;
   align-items: center;
   background-color: ${footer.background};
-  bottom: 0;
+  // bottom: 0;
   position: absolute;
   padding: 15px 0px 30px 0px;
   width: 100%;
+  
 
   div:nth-child(1) {
     align-items: center;
@@ -55,7 +56,7 @@ const SFooter = styled.footer`
   @media screen and (max-width: 768px) {
     align-items: center;
     background-color: ${footer.background};
-    bottom: 0;
+    // bottom: 0;
     position: absolute;
     padding: 10px 0px 22px 0px;
     width: 100%;

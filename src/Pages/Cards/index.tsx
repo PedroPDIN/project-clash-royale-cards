@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Components from '../../Components';
 import ICards from '../../Interfaces/Cards';
 import cards from '../../cards.json';
@@ -8,7 +8,10 @@ import SMain from './styled';
 const Cards = () => {
   const [active, setActive] = useState<boolean>(false);
   const [allCards, setAllCards] = useState<ICards[] | []>([]);
-  setAllCards(cards);
+
+  useEffect(() => {
+    setAllCards(cards);
+  }, [allCards]);
 
   return (
     <SMain>
@@ -26,6 +29,7 @@ const Cards = () => {
       </ul>
       <Components.Footer />
     </SMain>
+
   );
 };
 
