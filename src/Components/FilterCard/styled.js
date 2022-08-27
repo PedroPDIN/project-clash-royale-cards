@@ -6,7 +6,7 @@ const SFilter = styled.div`
   flex-direction: column;
   justify-content: end;
   height: 150px;
-  position: absolute;
+  position: fixed;
   top: 2px;
   width: 97%;
   z-index: 0;
@@ -46,8 +46,8 @@ const SFilter = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: end;
-  height: 122px;
-  position: absolute;
+  height: 142px;
+  position: fixed;
   top: 1px;
   width: 97%;
   z-index: 0;

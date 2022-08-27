@@ -6,8 +6,10 @@ const SHeader = styled.header`
   border-bottom: solid 5px black;
   display: flex;
   justify-content: space-between;
-  padding: 10px 35px;
-  position: relative;
+  padding: 10px 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: 2;
 
   div:nth-child(1) {
@@ -36,7 +38,7 @@ const SHeader = styled.header`
     cursor: pointer;
     display: flex;
     font-size: 40px;
-    margin-right: 20px;
+    margin-right: 90px;
     transition: all 0.4 ease-in-out;
   };
 
@@ -45,8 +47,15 @@ const SHeader = styled.header`
   };
 
   @media screen and (max-width: 768px) {
-    border-bottom: solid 4px black;
-    padding: 5px 12px;
+    background-color: ${header.background};
+    border-bottom: solid 5px black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 16px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
 
     div:nth-child(1) {
       display: flex;
@@ -65,7 +74,7 @@ const SHeader = styled.header`
     div:nth-child(1) span {
       color: ${header.fontColor};
       font-size: 12px;
-      margin-left: 14px
+      margin-left: 10px
     };
 
     button {
@@ -74,7 +83,7 @@ const SHeader = styled.header`
       cursor: pointer;
       display: flex;
       font-size: 35px;
-      margin-right: 5px;
+      margin-right: 38px;
       transition: all 0.4 ease-in-out;
     };
 
