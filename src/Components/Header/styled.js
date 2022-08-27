@@ -38,7 +38,7 @@ const SHeader = styled.header`
     cursor: pointer;
     display: flex;
     font-size: 40px;
-    margin-right: 90px;
+     margin: -7px 90px 0px 0px;
     transition: all 0.4 ease-in-out;
   };
 
@@ -51,7 +51,7 @@ const SHeader = styled.header`
     border-bottom: solid 5px black;
     display: flex;
     justify-content: space-between;
-    padding: 10px 16px;
+    padding: 10px 9px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -72,9 +72,11 @@ const SHeader = styled.header`
     }
 
     div:nth-child(1) span {
+      align-items: flex-start;
+      display: flex;
       color: ${header.fontColor};
-      font-size: 12px;
-      margin-left: 10px
+      font-size: 10px;
+      margin: 18px 0px 0px 3px;
     };
 
     button {
@@ -83,7 +85,7 @@ const SHeader = styled.header`
       cursor: pointer;
       display: flex;
       font-size: 35px;
-      margin-right: 38px;
+      margin: -7px 24px 0px 0px;
       transition: all 0.4 ease-in-out;
     };
 
