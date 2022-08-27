@@ -30,7 +30,6 @@ const SMain = styled.main`
   
   article a img:hover {
     transform: translateY(-12px);
-    margin: 0;
   }
 
   @media screen and (max-width: 768px) {
