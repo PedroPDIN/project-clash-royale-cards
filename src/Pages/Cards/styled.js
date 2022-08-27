@@ -25,17 +25,19 @@ const SMain = styled.main`
     justify-content: center;
     padding: 5px 8px;
     transition: all 0.3s ease-in-out;
-    width: 105px;
+    width: 95px;
   };
   
   article a img:hover {
     transform: translateY(-12px);
-  }
+  };
 
   @media screen and (max-width: 768px) {
     background-image: url(${backgroundMobile});
     background-attachment: fixed;
     background-size: 100% 100%;
+    margin-bottom: 20px;
+    padding-bottom: 25px;
     z-index: 1;
     
     article {
@@ -46,7 +48,7 @@ const SMain = styled.main`
       flex-wrap: wrap;
       justify-content: center;
       margin: -18px 10px 0px 10px;
-      padding-top: 12px;
+      padding: 12px 0px;
     }
 
     article a img {
@@ -54,10 +56,10 @@ const SMain = styled.main`
       justify-content: center;
       padding: 5px 8px;
       transition: all 0.3s ease-in-out;
-      width: 86px;
+      width: 69px;
     };
     
-    article a img:hover {
+    article a img:hover, span {
       transform: translateY(-10px);
     }
   }
