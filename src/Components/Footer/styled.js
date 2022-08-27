@@ -56,6 +56,9 @@ const SFooter = styled.footer`
   @media screen and (max-width: 768px) {
     align-items: center;
     background-color: ${footer.background};
+    border-top: solid 2px black;
+    display: flex;
+    margin-top: 23px;
     // bottom: 0;
     position: absolute;
     padding: 10px 0px 22px 0px;
@@ -83,7 +86,7 @@ const SFooter = styled.footer`
     };
 
     div:nth-child(1) span {
-      justify-content: center;
+      justify-content: end;
       display: flex;
       height: 35px;
       color: ${footer.fontColor};
