@@ -25,7 +25,7 @@ const SMain = styled.main`
     justify-content: center;
     padding: 5px 8px;
     transition: all 0.3s ease-in-out;
-    width: 95px;
+    width: 112px;
   };
   
   article a img:hover {
