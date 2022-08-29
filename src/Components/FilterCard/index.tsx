@@ -3,31 +3,55 @@ import React from 'react';
 import SFilter from './styled';
 
 interface Props {
-  search: string;
-  setSearch: React.Dispatch<React.SetStateAction<string>>
+  searchName: string;
+  setSearchName: React.Dispatch<React.SetStateAction<string>>
+  rarityNumber: number;
+  setRarityNumber: React.Dispatch<React.SetStateAction<number>>
 }
 
-const FilterCard = ({ search, setSearch }: Props) => {
+type rarities = { id: number; name: string, maxLevel: number };
+
+const FilterCard = ({
+  searchName,
+  setSearchName,
+  rarityNumber,
+  setRarityNumber,
+}: Props) => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const InputSearch = e.target.value;
-    setSearch(InputSearch);
+    const inputSearch = e.target.value;
+    setSearchName(inputSearch);
   };
+
+  const handleSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const selectSearch = +e.target.value;
+    if (typeof +selectSearch === 'number') {
+      setRarityNumber(selectSearch);
+    } else {
+      alert('Problemas internas ao realizar a busca por raridade');
+    }
+  };
+
+  const allRarities: rarities[] = [
+    { id: 1, name: 'Todos', maxLevel: 0 },
+    { id: 2, name: 'Comum', maxLevel: 14 },
+    { id: 3, name: 'Rara', maxLevel: 12 },
+    { id: 4, name: 'Épica', maxLevel: 9 },
+    { id: 5, name: 'Lendária', maxLevel: 6 },
+    { id: 6, name: 'Campeões', maxLevel: 4 },
+  ];
 
   return (
     <SFilter>
       <input
         type="text"
         placeholder="nome"
-        value={ search }
+        value={ searchName }
         onChange={ handleChange }
       />
-      <select name="" id="">
-        <option value="all">Todos</option>
-        <option value="common">Comum</option>
-        <option value="rare">Rara</option>
-        <option value="epic">Épica</option>
-        <option value="legendary">Lendária</option>
-        <option value="champions">Campeões</option>
+      <select value={ rarityNumber } onChange={ handleSelect }>
+        {allRarities.map(({ id, name, maxLevel }) => (
+          <option key={ id } value={ maxLevel }>{ name }</option>
+        ))}
       </select>
     </SFilter>
   );

@@ -9,20 +9,31 @@ import SMain from './styled';
 const Cards = () => {
   const [active, setActive] = useState<boolean>(false);
   const [allCards, setAllCards] = useState<ICards[] | []>([]);
-  const [search, setSearch] = useState<string>('');
+  const [searchName, setSearchName] = useState<string>('');
+  const [rarityNumber, setRarityNumber] = useState<number>(0);
 
   useEffect(() => {
+    const initialCards = cards
+      .filter((card) => (
+        card.name !== 'Barbarian Launcher' && card.name !== 'Super Mini P.E.K.K.A'
+      ))
+      .filter((card) => card.name.toLowerCase().startsWith(searchName!.toLowerCase()))
+      .sort(cardSort);
+
     const newCards = cards
       .filter((card) => (
         card.name !== 'Barbarian Launcher' && card.name !== 'Super Mini P.E.K.K.A'
       ))
-      .filter((card) => card.name.toLowerCase().startsWith(search.toLowerCase()))
+      .filter((card) => card.name.toLowerCase().startsWith(searchName!.toLowerCase()))
+      .filter((card) => rarityNumber > 0 && card.maxLevel === rarityNumber)
       .sort(cardSort);
 
-    setTimeout(() => {
+    if (rarityNumber === 0) {
+      setAllCards(initialCards);
+    } else {
       setAllCards(newCards);
-    }, 200);
-  }, [allCards]);
+    }
+  }, [searchName, rarityNumber]);
 
   return (
     <SMain>
@@ -33,8 +44,10 @@ const Cards = () => {
 
       {active && (
         <Components.FilterCard
-          search={ search }
-          setSearch={ setSearch }
+          searchName={ searchName }
+          setSearchName={ setSearchName }
+          rarityNumber={ rarityNumber }
+          setRarityNumber={ setRarityNumber }
         />
       )}
 
