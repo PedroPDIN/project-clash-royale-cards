@@ -27,6 +27,7 @@ const FilterCard = ({
     if (typeof +selectSearch === 'number') {
       setRarityNumber(selectSearch);
     } else {
+      // eslint-disable-next-line no-alert
       alert('Problemas internas ao realizar a busca por raridade');
     }
   };
