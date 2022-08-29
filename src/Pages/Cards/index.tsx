@@ -9,16 +9,19 @@ import SMain from './styled';
 const Cards = () => {
   const [active, setActive] = useState<boolean>(false);
   const [allCards, setAllCards] = useState<ICards[] | []>([]);
+  const [search, setSearch] = useState<string>('');
 
   useEffect(() => {
     const newCards = cards
       .filter((card) => (
         card.name !== 'Barbarian Launcher' && card.name !== 'Super Mini P.E.K.K.A'
-      )).sort(cardSort);
+      ))
+      .filter((card) => card.name.toLowerCase().startsWith(search.toLowerCase()))
+      .sort(cardSort);
 
     setTimeout(() => {
       setAllCards(newCards);
-    }, 500);
+    }, 200);
   }, [allCards]);
 
   return (
@@ -27,7 +30,14 @@ const Cards = () => {
         active={ active }
         setActive={ setActive }
       />
-      {active && <Components.FilterCard />}
+
+      {active && (
+        <Components.FilterCard
+          search={ search }
+          setSearch={ setSearch }
+        />
+      )}
+
       <article>
         {allCards.map(({ id, name, iconUrls }) => (
           <a key={ id } href="ainda não possui nenhum link">
@@ -36,6 +46,7 @@ const Cards = () => {
           </a>
         ))}
       </article>
+
       <Components.Footer />
     </SMain>
 
