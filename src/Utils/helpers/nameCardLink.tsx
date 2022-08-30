@@ -3,8 +3,7 @@ const nameCardLink = (name: string): any => {
   const currentArrayName = currentName.split('');
 
   if (currentArrayName.includes('.') && currentArrayName.includes(' ')) {
-    const valueCurrent = currentName.split('.').join('');
-    return valueCurrent.split(' ').join('-');
+    return currentName.split('.').join('').split(' ').join('-');
   }
 
   if (currentArrayName.includes('.')) {
