@@ -1,3 +1,7 @@
 import cardSort from './sortCards';
+import nameCardLink from './nameCardLink';
 
-export default cardSort;
+export {
+  cardSort,
+  nameCardLink,
+};

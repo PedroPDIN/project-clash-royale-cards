@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Components from '../../Components';
 import ICards from '../../Interfaces/Cards';
 import cards from '../../cards.json';
-import cardSort from '../../Utils/helpers';
+import { cardSort, nameCardLink } from '../../Utils/helpers';
 
 import SMain from './styled';
 
@@ -14,16 +14,18 @@ const Cards = () => {
 
   useEffect(() => {
     const initialCards = cards
-      .filter((card) => (
-        card.name !== 'Barbarian Launcher' && card.name !== 'Super Mini P.E.K.K.A'
-      ))
+      .filter(
+        (card) => card.name !== 'Barbarian Launcher'
+          && card.name !== 'Super Mini P.E.K.K.A',
+      )
       .filter((card) => card.name.toLowerCase().startsWith(searchName!.toLowerCase()))
       .sort(cardSort);
 
     const newCards = cards
-      .filter((card) => (
-        card.name !== 'Barbarian Launcher' && card.name !== 'Super Mini P.E.K.K.A'
-      ))
+      .filter(
+        (card) => card.name !== 'Barbarian Launcher'
+          && card.name !== 'Super Mini P.E.K.K.A',
+      )
       .filter((card) => card.name.toLowerCase().startsWith(searchName!.toLowerCase()))
       .filter((card) => rarityNumber > 0 && card.maxLevel === rarityNumber)
       .sort(cardSort);
@@ -37,10 +39,7 @@ const Cards = () => {
 
   return (
     <SMain>
-      <Components.Header
-        active={ active }
-        setActive={ setActive }
-      />
+      <Components.Header active={ active } setActive={ setActive } />
 
       {active && (
         <Components.FilterCard
@@ -53,7 +52,7 @@ const Cards = () => {
 
       <article>
         {allCards.map(({ id, name, iconUrls }) => (
-          <a key={ id } href="ainda não possui nenhum link">
+          <a key={ id } href={ `https://royaleapi.com/card/${nameCardLink(name)}` }>
             {/* <span>{ name }</span> */}
             <img src={ iconUrls.medium } alt={ name } />
           </a>
@@ -62,7 +61,6 @@ const Cards = () => {
 
       <Components.Footer />
     </SMain>
-
   );
 };
 
