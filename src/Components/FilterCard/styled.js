@@ -5,11 +5,11 @@ const SFilter = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: end;
-  height: 150px;
+  height: 137px;
   position: fixed;
   top: 2px;
   width: 97%;
-  z-index: 0;
+  z-index: 98;
   
   input, select {
     animation-duration: 0.5s;
@@ -50,7 +50,7 @@ const SFilter = styled.div`
   position: fixed;
   top: 1px;
   width: 97%;
-  z-index: 0;
+  z-index: 99;
   
   input, select {
     animation-duration: 0.5s;

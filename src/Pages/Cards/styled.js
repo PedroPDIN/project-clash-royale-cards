@@ -6,18 +6,24 @@ const SMain = styled.main`
   background-image: url(${backgroundScreen});
   background-attachment: fixed;
   background-size: 100% 100%;
+  height: 100vh;
   padding: 114px 0px 15px 0px;
   z-index: 1;
 
   article {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.6);
+    border: 3px solid black;
     border-radius: 12px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0px 60px 30px 60px;
-    padding-top: 20px;
+    height: 71vh;
+    margin: -12px 70px 0px 70px;
+    overflow-y: scroll;
+    ::-webkit-scrollbar {
+      display: none;
+    }
   };
 
   article a img {

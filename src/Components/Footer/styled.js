@@ -3,12 +3,12 @@ import { footer } from '../../Styles/ColorPattern';
 
 const SFooter = styled.footer`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   background-color: ${footer.background};
-  // bottom: 0;
-  position: absolute;
-  padding: 15px 0px 30px 0px;
+  bottom: 0;
+  position: fixed;
+  padding: 8px 0px 10px 0px;
   width: 100%;
   
 
@@ -20,7 +20,7 @@ const SFooter = styled.footer`
   div:nth-child(1) .social_person {
     align-items: center;
     display: flex;
-    font-size: 35px;
+    font-size: 30px;
     justify-content: space-between;
     margin-left: 25px;
     width: 80px;
