@@ -51,11 +51,11 @@ const SHeader = styled.header`
     border-bottom: solid 5px black;
     display: flex;
     justify-content: space-between;
-    padding: 10px 9px;
+    padding: 6px 5px;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 99;
 
     div:nth-child(1) {
       display: flex;
@@ -75,7 +75,7 @@ const SHeader = styled.header`
       align-items: flex-start;
       display: flex;
       color: ${header.fontColor};
-      font-size: 10px;
+      font-size: 9px;
       margin: 18px 0px 0px 3px;
     };
 
@@ -85,7 +85,7 @@ const SHeader = styled.header`
       cursor: pointer;
       display: flex;
       font-size: 35px;
-      margin: -7px 24px 0px 0px;
+      margin: -7px 10px 0px 0px;
       transition: all 0.4 ease-in-out;
     };
 

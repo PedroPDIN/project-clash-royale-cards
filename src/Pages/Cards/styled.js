@@ -18,8 +18,8 @@ const SMain = styled.main`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 71vh;
-    margin: -12px 70px 0px 70px;
+    height: 89%;
+    margin: -20px 50px 0px 50px;
     overflow-y: scroll;
     ::-webkit-scrollbar {
       display: none;
@@ -42,8 +42,7 @@ const SMain = styled.main`
     background-image: url(${backgroundMobile});
     background-attachment: fixed;
     background-size: 100% 100%;
-    margin-bottom: 20px;
-    padding-bottom: 25px;
+    height: 100vh;
     z-index: 1;
     
     article {
@@ -53,7 +52,8 @@ const SMain = styled.main`
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      margin: -18px 10px 0px 10px;
+      height: 96%;
+      margin: -36px 10px 0px 10px;
       padding: 12px 0px;
     }
 
@@ -62,7 +62,7 @@ const SMain = styled.main`
       justify-content: center;
       padding: 5px 8px;
       transition: all 0.3s ease-in-out;
-      width: 69px;
+      width: 73px;
     };
     
     article a img:hover, span {

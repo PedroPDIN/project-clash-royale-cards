@@ -2,11 +2,11 @@ import styled from 'styled-components';
 import { footer } from '../../Styles/ColorPattern';
 
 const SFooter = styled.footer`
+  align-items: center;
+  bottom: 0;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
   background-color: ${footer.background};
-  bottom: 0;
   position: fixed;
   padding: 8px 0px 10px 0px;
   width: 100%;
@@ -55,13 +55,14 @@ const SFooter = styled.footer`
 
   @media screen and (max-width: 768px) {
     align-items: center;
+    bottom: 0;
     background-color: ${footer.background};
     border-top: solid 2px black;
     display: flex;
+    justify-content: space-between;
     margin-top: 23px;
-    // bottom: 0;
-    position: absolute;
-    padding: 10px 0px 22px 0px;
+    position: fixed;
+    padding: 8px 0px 10px 0px;
     width: 100%;
 
     div:nth-child(1) {
@@ -72,10 +73,9 @@ const SFooter = styled.footer`
     div:nth-child(1) .social_person {
       align-items: center;
       display: flex;
-      font-size: 35px;
-      justify-content: space-between;
-      margin-left: 25px;
-      width: 80px;
+      font-size: 20px;
+      justify-content: start;
+      margin-left: 20px;
     };
 
     div:nth-child(1) .social_person a {
@@ -83,6 +83,7 @@ const SFooter = styled.footer`
       display: flex;
       color: #ffffff;
       flex-direction: column;
+      margin-right: 10px;
     };
 
     div:nth-child(1) span {
