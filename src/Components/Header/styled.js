@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { header } from '../../Styles';
+import { header } from '../../Styles/ColorPattern';
 
 const SHeader = styled.header`
   background-color: ${header.background};
