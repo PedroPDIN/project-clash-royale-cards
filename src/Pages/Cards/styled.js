@@ -25,7 +25,7 @@ const SMain = styled.main`
     position: relative;
     ::-webkit-scrollbar {
       display: none;
-    }
+    };
   };
 
   article a {
@@ -90,7 +90,7 @@ const SMain = styled.main`
       padding: 12px 0px 20 0px;
       position: relative;
       text-align: center;
-    }
+    };
 
     article a {
       text-decoration: none;
@@ -112,13 +112,13 @@ const SMain = styled.main`
       text-align: center;
       transition: 0.5s ease-in-out;
       width: 63px;
-    } 
+    };
 
     article a:hover::after {
       opacity: 1;
       position: absolute;
       transform: translateY(6px);
-    }
+    };
 
     article a img {
       display: flex;
@@ -130,7 +130,7 @@ const SMain = styled.main`
     
     article a img:hover, span {
       transform: translateY(-10px);
-    }
+    };
   }
 `;
 
