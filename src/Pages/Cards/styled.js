@@ -21,7 +21,8 @@ const SMain = styled.main`
     height: 90%;
     margin: -20px 50px 0px 50px;
     overflow-y: scroll;
-    padding-bottom: 18px;
+    padding: 10px 0px 30px 0px;
+    position: relative;
     ::-webkit-scrollbar {
       display: none;
     }
@@ -42,7 +43,8 @@ const SMain = styled.main`
     font-size: 10px;
     margin-top: -1em;
     padding: 5px;
-    position: relative;
+    position: absolute;
+    pointer-events: none;
     opacity: 0; 
     text-align: center;
     transition: 0.5s ease-in-out;
@@ -51,8 +53,10 @@ const SMain = styled.main`
 
   article a:hover::after {
     opacity: 1;
-    position: relative;
+    position: absolute;
+    pointer-events: all;
     transform: translateY(6px);
+    z-index: 2;
   };
 
   article a img {
@@ -64,7 +68,7 @@ const SMain = styled.main`
   };
   
   article a img:hover {
-    transform: translateY(-12px);
+    transform: translateY(-6px);
   };
 
   @media screen and (max-width: 768px) {
@@ -83,7 +87,8 @@ const SMain = styled.main`
       justify-content: center;
       height: 96%;
       margin: -36px 10px 0px 10px;
-      padding: 12px 0px;
+      padding: 12px 0px 20 0px;
+      position: relative;
       text-align: center;
     }
 
@@ -102,7 +107,7 @@ const SMain = styled.main`
       font-size: 8px;
       margin-top: -1em;
       padding: 5px;
-      position: relative;
+      position: absolute;
       opacity: 0; 
       text-align: center;
       transition: 0.5s ease-in-out;
@@ -111,7 +116,7 @@ const SMain = styled.main`
 
     article a:hover::after {
       opacity: 1;
-      position: relative;
+      position: absolute;
       transform: translateY(6px);
     }
 
