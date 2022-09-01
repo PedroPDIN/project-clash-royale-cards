@@ -99,7 +99,7 @@ const SMain = styled.main`
       color: black;
       display: flex;
       flex-direction: column;
-      font-size: 7px;
+      font-size: 8px;
       margin-top: -1em;
       padding: 5px;
       position: relative;
