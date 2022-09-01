@@ -52,9 +52,15 @@ const Cards = () => {
 
       <article>
         {allCards.map(({ id, name, iconUrls }) => (
-          <a key={ id } href={ `https://royaleapi.com/card/${nameCardLink(name)}` }>
-            {/* <span>{ name }</span> */}
-            <img src={ iconUrls.medium } alt={ name } />
+          <a
+            key={ id }
+            href={ `https://royaleapi.com/card/${nameCardLink(name)}` }
+            aria-label={ name }
+          >
+            <img
+              src={ iconUrls.medium }
+              alt={ name }
+            />
           </a>
         ))}
       </article>
