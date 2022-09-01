@@ -7,7 +7,7 @@ const SMain = styled.main`
   background-attachment: fixed;
   background-size: 100% 100%;
   height: 100vh;
-  padding: 114px 0px 15px 0px;
+  padding: 110px 0px 15px 0px;
   z-index: 1;
 
   article {
@@ -18,34 +18,42 @@ const SMain = styled.main`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 89%;
+    height: 90%;
     margin: -20px 50px 0px 50px;
     overflow-y: scroll;
+    padding-bottom: 18px;
     ::-webkit-scrollbar {
       display: none;
     }
   };
 
+  article a {
+    text-decoration: none;
+  };
+
   article a:after {
+    align-items: center;
     background-color: white;
     border-radius: 10px;
     content: attr(aria-label);
     color: black;
+    display: flex;
+    flex-direction: column;
     font-size: 10px;
     margin-top: -1em;
     padding: 5px;
-    position: absolute;
+    position: relative;
     opacity: 0; 
     text-align: center;
     transition: 0.5s ease-in-out;
     width: 100px;
-   } 
+   };
 
   article a:hover::after {
     opacity: 1;
-    position: absolute;
+    position: relative;
     transform: translateY(6px);
-  }
+  };
 
   article a img {
     display: flex;
@@ -76,26 +84,34 @@ const SMain = styled.main`
       height: 96%;
       margin: -36px 10px 0px 10px;
       padding: 12px 0px;
+      text-align: center;
     }
 
+    article a {
+      text-decoration: none;
+    };
+
      article a:after {
-       background-color: white;
-       border-radius: 10px;
-       content: attr(aria-label);
-       color: black;
-       font-size: 7px;
-       margin-top: -1em;
-       padding: 5px;
-       position: absolute;
-       opacity: 0; 
-       text-align: center;
-       transition: 0.5s ease-in-out;
-       width: 63px;
+      align-items: center;
+      background-color: white;
+      border-radius: 10px;
+      content: attr(aria-label);
+      color: black;
+      display: flex;
+      flex-direction: column;
+      font-size: 7px;
+      margin-top: -1em;
+      padding: 5px;
+      position: relative;
+      opacity: 0; 
+      text-align: center;
+      transition: 0.5s ease-in-out;
+      width: 63px;
     } 
 
     article a:hover::after {
       opacity: 1;
-      position: absolute;
+      position: relative;
       transform: translateY(6px);
     }
 
