@@ -1,14 +1,16 @@
 import styled from 'styled-components';
-import { header } from '../../Styles';
+import { header } from '../../Styles/ColorPattern';
 
 const SHeader = styled.header`
   background-color: ${header.background};
   border-bottom: solid 5px black;
   display: flex;
   justify-content: space-between;
-  padding: 10px 35px;
-  position: relative;
-  z-index: 2;
+  padding: 4px 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
 
   div:nth-child(1) {
     display: flex;
@@ -36,7 +38,7 @@ const SHeader = styled.header`
     cursor: pointer;
     display: flex;
     font-size: 40px;
-    margin-right: 20px;
+    margin: -7px 60px 0px 0px;
     transition: all 0.4 ease-in-out;
   };
 
@@ -45,8 +47,15 @@ const SHeader = styled.header`
   };
 
   @media screen and (max-width: 768px) {
-    border-bottom: solid 4px black;
-    padding: 5px 12px;
+    background-color: ${header.background};
+    border-bottom: solid 5px black;
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
 
     div:nth-child(1) {
       display: flex;
@@ -63,9 +72,11 @@ const SHeader = styled.header`
     }
 
     div:nth-child(1) span {
+      align-items: flex-start;
+      display: flex;
       color: ${header.fontColor};
-      font-size: 12px;
-      margin-left: 14px
+      font-size: 9px;
+      margin: 18px 0px 0px 3px;
     };
 
     button {
@@ -74,7 +85,7 @@ const SHeader = styled.header`
       cursor: pointer;
       display: flex;
       font-size: 35px;
-      margin-right: 5px;
+      margin: -7px 10px 0px 0px;
       transition: all 0.4 ease-in-out;
     };
 

@@ -5,11 +5,11 @@ const SFilter = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: end;
-  height: 150px;
-  position: absolute;
+  height: 137px;
+  position: fixed;
   top: 2px;
   width: 97%;
-  z-index: 0;
+  z-index: 98;
   
   input, select {
     animation-duration: 0.5s;
@@ -46,16 +46,16 @@ const SFilter = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: end;
-  height: 122px;
-  position: absolute;
+  height: 120px;
+  position: fixed;
   top: 1px;
   width: 97%;
-  z-index: 0;
+  z-index: 98;
   
   input, select {
     animation-duration: 0.5s;
     animation-name: slideFilter;
-    font-size: 15px;
+    font-size: 12px;
     padding: 2px;
     transition: all 0.1 ease-in-out;
   };
@@ -71,14 +71,13 @@ const SFilter = styled.div`
 
   input {
     border-radius: 5px;
-    width: 50%;
+    width: 55%;
   };
 
   select {
     border-radius: 5px;
-    margin-top: 3px;
     text-align: center;
-    width: 40%;
+    width: 45%;
   };
 };
 `;
