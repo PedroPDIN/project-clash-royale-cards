@@ -22,7 +22,7 @@
   <br />
 
     - ReactJS
-    - Typescript
+    - TypeScript
     - StyledComponent
     - React-Icons
 </details>
