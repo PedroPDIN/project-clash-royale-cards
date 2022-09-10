@@ -57,3 +57,9 @@
   OBS: No momento que é publicado essa documentação, esta em fase experimental no React o método <a href="https://pt-br.reactjs.org/docs/concurrent-mode-suspense.html">Suspense</a> que possa ser uma outra solução para esse desafio, vale a pena acompanhar e da uma olhada.
 
 </details>
+
+##
+
+### Status do projeto
+#### :construction: Em andamento :construction:
+
