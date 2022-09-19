@@ -18,7 +18,7 @@
 </details>
 
 <details>
-<summary><strong>Tasks</strong></summary>
+<summary><strong>Stacks</strong></summary>
   <br />
 
     - ReactJS
