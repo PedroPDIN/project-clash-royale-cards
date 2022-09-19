@@ -51,7 +51,7 @@
 <summary><strong>Melhorias</strong></summary>
 <br />
 
-  1. Adicionar componente/pagina de Carregamento, com isso e possível "esperar" por um tempo determinado para que todos os dados dos cards seja carregado com sucesso, com isso evitando o problemas assíncronas. (possível solução do problema, exite talvez outras soluções alternativas).
+  1. Adicionar componente/pagina de Carregamento, com isso e possível "esperar" por um tempo determinado para que todos os dados dos cards seja carregado com sucesso, com isso evitando os problemas assíncronas. (possível solução do problema, existe talvez outras soluções alternativas).
 
 
   OBS: No momento que é publicado essa documentação, esta em fase experimental no React o método <a href="https://pt-br.reactjs.org/docs/concurrent-mode-suspense.html">Suspense</a> que possa ser uma outra solução para esse desafio, vale a pena acompanhar e da uma olhada.
