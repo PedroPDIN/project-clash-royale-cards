@@ -11,6 +11,7 @@ const Cards = () => {
   const [allCards, setAllCards] = useState<ICards[] | []>([]);
   const [searchName, setSearchName] = useState<string>('');
   const [rarityNumber, setRarityNumber] = useState<number>(0);
+  const [timeLoad, setTimeLoad] = useState<boolean>(false);
 
   useEffect(() => {
     const initialCards = cards
@@ -37,6 +38,14 @@ const Cards = () => {
     }
   }, [searchName, rarityNumber]);
 
+  const setTimeLoadPage = () => {
+    setTimeout(() => {
+      setTimeLoad(true);
+    }, 5000);
+  };
+
+  setTimeLoadPage();
+
   return (
     <SMain>
       <Components.Header active={ active } setActive={ setActive } />
@@ -50,20 +59,25 @@ const Cards = () => {
         />
       )}
 
-      <article>
-        {allCards.map(({ id, name, iconUrls }) => (
-          <a
-            key={ id }
-            href={ `https://royaleapi.com/card/${nameCardLink(name)}` }
-            aria-label={ name }
-          >
-            <img
-              src={ iconUrls.medium }
-              alt={ name }
-            />
-          </a>
-        ))}
-      </article>
+      {timeLoad
+        ? (
+          <article>
+            {allCards.map(({ id, name, iconUrls }) => (
+              <a
+                key={ id }
+                href={ `https://royaleapi.com/card/${nameCardLink(name)}` }
+                aria-label={ name }
+              >
+                <img
+                  src={ iconUrls.medium }
+                  alt={ name }
+                />
+              </a>
+            ))}
+          </article>
+        ) : (
+          <Components.Loading />
+        )}
 
       <Components.Footer />
     </SMain>
