@@ -41,7 +41,7 @@ const Home = () => {
   const setTimeLoadPage = () => {
     setTimeout(() => {
       setTimeLoad(true);
-    }, 5000);
+    }, 7000);
   };
 
   setTimeLoadPage();
