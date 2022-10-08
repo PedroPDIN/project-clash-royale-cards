@@ -6,7 +6,7 @@ import { cardSort, nameCardLink } from '../../Utils/helpers';
 
 import SMain from './styled';
 
-const Cards = () => {
+const Home = () => {
   const [active, setActive] = useState<boolean>(false);
   const [allCards, setAllCards] = useState<ICards[] | []>([]);
   const [searchName, setSearchName] = useState<string>('');
@@ -84,4 +84,4 @@ const Cards = () => {
   );
 };
 
-export default Cards;
+export default Home;

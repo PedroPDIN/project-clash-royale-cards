@@ -3,7 +3,7 @@ import Pages from './Pages';
 
 const App = () => (
   <div>
-    <Pages.Cards />
+    <Pages.Home />
   </div>
 );
 
