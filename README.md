@@ -50,5 +50,5 @@
 ##
 
 ### Status do projeto
-#### :checkered_flag: Concluído :checkered_flag:
+### :checkered_flag: Concluído :checkered_flag:
 
