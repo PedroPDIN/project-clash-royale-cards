@@ -1,7 +1,7 @@
-import Cards from './Cards';
+import Home from './Home';
 
 const Pages = {
-  Cards,
+  Home,
 };
 
 export default Pages;

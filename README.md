@@ -2,7 +2,7 @@
 
 ### Aplicação que tem como finalidade renderizar e também trazer informações/detalhes de todas as cartas do game mobile Clash Royale.
 
-<img src="./project-example/clash-royale-cards.gif" alt="example-project-cards" />
+<img src="./assets/clash-royale-cards.gif" alt="example-project-cards" />
 <br><br>
 
 <details>
@@ -47,19 +47,8 @@
 
 </details>
 
-<details>
-<summary><strong>Melhorias</strong></summary>
-<br />
-
-  1. Adicionar componente/pagina de Carregamento, com isso e possível "esperar" por um tempo determinado para que todos os dados dos cards seja carregado com sucesso, com isso evitando os problemas assíncronas. (possível solução do problema, existe talvez outras soluções alternativas).
-
-
-  OBS: No momento que é publicado essa documentação, esta em fase experimental no React o método <a href="https://pt-br.reactjs.org/docs/concurrent-mode-suspense.html">Suspense</a> que possa ser uma outra solução para esse desafio, vale a pena acompanhar e da uma olhada.
-
-</details>
-
 ##
 
 ### Status do projeto
-#### :construction: Em andamento :construction:
+#### :checkered_flag: Concluído :checkered_flag:
 
