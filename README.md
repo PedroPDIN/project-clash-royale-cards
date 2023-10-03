@@ -41,7 +41,7 @@
 
   - Use o comando: `npm install`.
 
-  3. Logo após isso basta inicia o servidor de desenvolvimento.
+  3. Logo após isso basta inicia-lo através do servidor de desenvolvimento.
 
   - use o comando: `npm start`
 
